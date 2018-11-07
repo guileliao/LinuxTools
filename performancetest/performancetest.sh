@@ -74,6 +74,6 @@ case $1 in
 		fDisplayMessage Info "Finished..."
 		;;
 	--help|-h|*)
-		fDisplayMessage Help "Help info"
+		fDisplayMessage Help "Help info" "--cpu" "--memory" "--disk" "--help|-h"
 		;;
 esac
