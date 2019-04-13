@@ -77,3 +77,4 @@ case $1 in
 		fDisplayMessage Help "Help info" "--cpu" "--memory" "--disk" "--help|-h" "COMMAND FORMAT:command --ops avg"
 		;;
 esac
+#file end
