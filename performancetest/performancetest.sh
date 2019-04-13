@@ -74,7 +74,13 @@ case $1 in
 		fDisplayMessage Info "Finished..."
 		;;
 	--help|-h|*)
-		fDisplayMessage Help "Help info" "--cpu" "--memory" "--disk" "--help|-h" "COMMAND FORMAT:command --ops avg"
+		fDisplayMessage Help \
+		"Help info" \
+		"Version:1.0" \
+		"Author:guile.liao" \
+		"Email:superpig001@qq.com" \
+		"COMMAND FORMAT:command --ops" \
+		"Option:{--cpu|--memory|--disk|--help|-h}" 
 		;;
 esac
 #file end
