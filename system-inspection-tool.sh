@@ -78,4 +78,6 @@ echo -e "DISKINFO\ndevice,total(KB),used(KB),free(KB),used%,mountpoint" >> temp.
 echo "DISKINFO"
 fCheckDiskInfo
 
-mv temp.csv Report-$(hostname -I|awk '{print $1}').csv
+mv temp.csv Report-$(hostname -I|awk '{print $1}')-$(date +%Y%m%d%H%M%S).csv
+
+#file end
