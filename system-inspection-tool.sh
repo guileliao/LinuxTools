@@ -23,14 +23,14 @@ fDisplayMessage(){
 #fDisplayMessage
 
 fCheckCpuInfo(){
-	#us, user： 运行(未调整优先级的) 用户进程的CPU时间
-	#sy，system: 运行内核进程的CPU时间
-	#ni，niced：运行已调整优先级的用户进程的CPU时间
-	#id，idle：CPU空闲时间
-	#wa，IO wait: 用于等待IO完成的CPU时间
-	#hi：处理硬件中断的CPU时间
-	#si: 处理软件中断的CPU时间
-	#st：这个虚拟机被hypervisor偷去的CPU时间（译注：如果当前处于一个hypervisor下的vm，实际上hypervisor也是要消耗一部分CPU处理时间的）。
+	#us — user： 运行(未调整优先级的) 用户进程的CPU时间
+	#sy — system: 运行内核进程的CPU时间
+	#ni — niced：运行已调整优先级的用户进程的CPU时间
+	#id — idle：CPU空闲时间
+	#wa — IO wait: 用于等待IO完成的CPU时间
+	#hi — 处理硬件中断的CPU时间
+	#si — 处理软件中断的CPU时间
+	#st — 这个虚拟机被hypervisor偷去的CPU时间（译注：如果当前处于一个hypervisor下的vm，实际上hypervisor也是要消耗一部分CPU处理时间的）。
 	#us — 用户空间占用CPU的百分比。
 	#sy — 内核空间占用CPU的百分比。
 	#ni — 改变过优先级的进程占用CPU的百分比
